@@ -1,0 +1,5 @@
+selenium
+pandas
+psycopg2
+webdriver-manager
+numpy
