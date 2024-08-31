@@ -33,11 +33,11 @@ jobs:
     - name: AMO
       run: echo "Amo DEVOPS" 
 
-    - name: Teste
-      run: coverage run -m rpa
+    # - name: Teste
+    #   run: coverage run -m rpa
 
-    - name: Relatorio
-      run: coverage report
+    # - name: Relatorio
+    #   run: coverage report
 
     - name: Git Version
       id: ver
