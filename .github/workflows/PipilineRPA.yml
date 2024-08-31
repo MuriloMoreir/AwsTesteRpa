@@ -34,7 +34,7 @@ jobs:
       run: echo "Amo DEVOPS" 
 
     - name: Teste
-      run: coverage run -m rpa
+      run: coverage run -m rpa_teste
 
     - name: Relatorio
       run: coverage report
