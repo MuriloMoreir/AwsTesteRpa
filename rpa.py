@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 from datetime import datetime
 from selenium.webdriver.chrome.options import Options
-import pandas as pd
+# import pandas as pd
 import psycopg2
 # import os
 # from dotenv import load_dotenv
