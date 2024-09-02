@@ -43,7 +43,6 @@ conexao = psycopg2.connect(database = "dbCotacao",
                            user = "avnadmin",
                            password = "AVNS_BjsAizQig1olY9q0atk",
                            port = "23734")
-)
 
 print(conexao.info)
 print(conexao.status)
