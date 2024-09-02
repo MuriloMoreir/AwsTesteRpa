@@ -26,11 +26,11 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(options = chrome_options)
 
-driver.get("https://www.google.com.br/search?q=d%C3%B3lar")
+driver.get("https://www.google.com.br/search?q=dolar&sca_esv=419ad3eaf305d86b&sca_upv=1&hl=pt-BR&sxsrf=ADLYWII3evl_Bti9qwQpzCOP84sjR5siTA%3A1725270974087&source=hp&ei=vovVZsHwAqLL1sQPgvzGsAQ&iflsig=AL9hbdgAAAAAZtWZzmICfID4mMoOYwSl1RmIjY5B2NVU&ved=0ahUKEwjBx7Kc_6OIAxWipZUCHQK-EUYQ4dUDCBc&uact=5&oq=dolar&gs_lp=Egdnd3Mtd2l6IgVkb2xhcjIKECMYgAQYJxiKBTIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixA0ipBVAAWNEDcAB4AJABAJgBogGgAYoEqgEDMC40uAEDyAEA-AEBmAIEoAKvBMICBBAjGCfCAgsQLhiABBjRAxjHAcICBRAAGIAEwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBmAMAkgcDMC40oAejHw&sclient=gws-wiz")
 sleep(2)
 
 # Pegando o valor do dólar
-dolar = driver.find_element(By.CSS_SELECTOR, ('.DFlfde.SwHCTb'))
+dolar = driver.find_element(By.CSS_SELECTOR, ('.DFlfde SwHCTb'))
 dolar_site = dolar.text
 dolar_site = float(dolar_site.replace(",","."))
 print('Dólar: ', dolar_site)
