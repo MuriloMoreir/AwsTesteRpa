@@ -30,7 +30,7 @@ driver.get("https://www.google.com.br/search?q=dolar&sca_esv=419ad3eaf305d86b&sc
 sleep(2)
 
 # Pegando o valor do dólar
-dolar = driver.find_element(By.CSS_SELECTOR, ('.DFlfde SwHCTb'))
+dolar = driver.find_element(By.CSS_SELECTOR, ('.DFlfde.SwHCTb'))
 dolar_site = dolar.text
 dolar_site = float(dolar_site.replace(",","."))
 print('Dólar: ', dolar_site)
